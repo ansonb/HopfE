@@ -27,10 +27,10 @@ import torch.autograd.profiler as profiler
 # from pytorch_memlab import LineProfiler
 import math
 
-class DensE(nn.Module):
+class DensEModel(nn.Module):
     def __init__(self, model_name, nentity, nrelation, hidden_dim, gamma, 
                  entity_embedding_has_mod=False, relation_embedding_has_mod=False):
-        super(DensE, self).__init__()
+        super(DensEModel, self).__init__()
         self.model_name = model_name
         self.nentity = nentity
         self.nrelation = nrelation
