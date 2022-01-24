@@ -19,18 +19,18 @@ To train the model(s) in the paper, run this command:
 ```train
 wn18: bash run.sh train HopfE wn18 <gpu-id> <dir> 512 1024 200 12.0 0.3 0.1 18000 8 0 -me -mr -adv
 wn18rr: bash run.sh train HopfE wn18rr <gpu-id> <dir> 512 512 200 6.0 0.5 0.1 15000 8 0 -me -mr -adv
-FB15k-237: bash run.sh train DensE FB15k-237 <gpu-id> <dir> 1024 256 500 9.0 1.0 0.1 27000 16 0 -me -mr -adv 
-YAGO3-10: bash run.sh train DensE YAGO3-10 <gpu-id> <dir> 1024 512 200 24.0 1.0 0.1 33000 16 0 -me -mr -adv
+FB15k-237: bash run.sh train HopfE FB15k-237 <gpu-id> <dir> 1024 256 500 9.0 1.0 0.1 27000 16 0 -me -mr -adv 
+YAGO3-10: bash run.sh train HopfE YAGO3-10 <gpu-id> <dir> 1024 512 200 24.0 1.0 0.1 33000 16 0 -me -mr -adv
 ```
 ## Evaluation
 
 To evaluate run:
 
 ```eval
-wn18: bash run.sh test DensE wn18 <gpu-id> <dir> 512 1024 200 12.0 0.3 0.1 18000 8 0 -me -mr -adv
-wn18rr: bash run.sh test DensE wn18rr <gpu-id> <dir> 512 512 200 6.0 0.5 0.1 15000 8 0 -me -mr -adv
-FB15k-237: bash run.sh test DensE FB15k-237 <gpu-id> <dir> 1024 256 500 9.0 1.0 0.1 27000 16 0 -me -mr -adv
-YAGO3-10: bash run.sh test DensE YAGO3-10 <gpu-id> <dir> 1024 512 200 24.0 1.0 0.1 33000 16 0 -me -mr -adv
+wn18: bash run.sh test HopfE wn18 <gpu-id> <dir> 512 1024 200 12.0 0.3 0.1 18000 8 0 -me -mr -adv
+wn18rr: bash run.sh test HopfE wn18rr <gpu-id> <dir> 512 512 200 6.0 0.5 0.1 15000 8 0 -me -mr -adv
+FB15k-237: bash run.sh test HopfE FB15k-237 <gpu-id> <dir> 1024 256 500 9.0 1.0 0.1 27000 16 0 -me -mr -adv
+YAGO3-10: bash run.sh test HopfE YAGO3-10 <gpu-id> <dir> 1024 512 200 24.0 1.0 0.1 33000 16 0 -me -mr -adv
 ```
 
 
