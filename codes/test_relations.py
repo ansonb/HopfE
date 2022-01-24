@@ -232,9 +232,7 @@ def add_star_node(max_node_id, nentity, max_rel_id):
         new_train_lst.append((nentity, max_rel_id, node))
     return new_train_lst
 
-from knockknock import slack_sender
-webhook_url = "https://hooks.slack.com/services/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"
-@slack_sender(webhook_url=webhook_url, channel="ml")
+
 def main(args):
     
     # if (not args.do_train) and (not args.do_valid) and (not args.do_test):

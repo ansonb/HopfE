@@ -247,9 +247,7 @@ def quat_mult(s_a, x_a, y_a, z_a, s_b, x_b, y_b, z_b):
     
     return (A, B, C, D)
 
-# from knockknock import slack_sender
-# webhook_url = "https://hooks.slack.com/services/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"
-# @slack_sender(webhook_url=webhook_url, channel="ml")
+
 def main(args):
     
     # if (not args.do_train) and (not args.do_valid) and (not args.do_test):
